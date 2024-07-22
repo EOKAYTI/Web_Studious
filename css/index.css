@@ -100,27 +100,242 @@ header .navbar-collapse i.fa-regular:hover {
 }
 
 /* CAROUSEL */
-.carousel {
-    width: 100%;
-    height: 100%;
-}
 
-
-.carousel .carousel_banner1 {
+.carousel .carousel_item1 {
     background-image: url("./../img/banner2.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
     height: 90vh;
-
-
 }
 
-.carousel .carousel_banner1 h1 {
+.carousel .carousel_item2 {
+    background-image: url("./../img/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+
+.carousel .carousel_content {
+    top: 250px;
+}
+
+.carousel .carousel_item1 h1,
+.carousel .carousel_item2 h1 {
     font-size: 70px;
     line-height: 80px;
     font-weight: bold;
-    color: #fff;
+}
 
-    top: 50px;
-    left: 50px;
+.carousel .carousel_item1 button,
+.carousel .carousel_item2 button {
+    padding: 10px 40px;
+}
+
+.carousel .carousel_item1 button:hover,
+.carousel .carousel_item2 button:hover {
+    background-color: #FF6E65;
+    color: white;
+    border-color: #FF6E65;
+}
+
+
+/* SERVICE */
+.service .row {
+    top: -100px;
+    z-index: 2;
+}
+
+.service .service_item {
+    padding: 50px 35px;
+    border-radius: 10px;
+}
+
+.service .service_item i {
+    font-size: 45px;
+    color: white;
+}
+
+.service .service_item a {
+    margin-top: 25px;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.service .service_item a:hover {
+    color: black;
+}
+
+/* WELCOME */
+.welcome .welcome_title {
+    margin-bottom: 48px;
+}
+
+.welcome .welcome_title h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.welcome .welcome_title h3::before {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: -20px;
+    bottom: -8px;
+}
+
+.welcome .welcome_title h3::after {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: 20px;
+    bottom: -15px;
+}
+
+.welcome .welcome_item i {
+    background-color: rgb(13 54 159 / 9%);
+    color: #0d369f;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+
+.welcome .welcome_item h5 {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.welcome .welcome_item h5:hover {
+    color: #FF6E65;
+    cursor: pointer;
+}
+
+.welcome .welcome_item p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #707070;
+    line-height: 28px;
+    letter-spacing: 0.4;
+}
+
+/* CLASS */
+.class {
+    background-image: url("./../img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.class .class_content {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+    margin: 20px 2px;
+}
+
+
+.class .class_icon {
+    background-color: rgb(13 54 159 / 9%);
+    color: #0d369f;
+    font-size: 30px;
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.class .class_content h5 {
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.class .class_content p {
+    color: #707070;
+}
+
+/* NUMBER */
+
+.number {
+    margin: 48px 0;
+}
+
+.number .number_title {
+    padding: 48px 0;
+}
+
+.number .number_item {
+    border-right: 1px solid rgba(194, 188, 188, 0.492);
+}
+
+.number .number_item:nth-child(4) {
+    border-right: none;
+}
+
+.number .number_title h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.number .number_title h3::before {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: -20px;
+    bottom: -8px;
+}
+
+.number .number_title h3::after {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: 20px;
+    bottom: -15px;
+}
+
+.number .number_title p {
+    color: #707070;
+}
+
+.number .number_content h3 {
+    font-size: 46px;
+    font-weight: 600;
 }
