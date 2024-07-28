@@ -100,7 +100,6 @@ header .navbar-collapse i.fa-regular:hover {
 }
 
 /* CAROUSEL */
-
 .carousel .carousel_item1 {
     background-image: url("./../img/banner2.jpg");
     background-repeat: no-repeat;
@@ -114,7 +113,6 @@ header .navbar-collapse i.fa-regular:hover {
     background-size: cover;
     height: 90vh;
 }
-
 
 .carousel .carousel_content {
     top: 250px;
@@ -138,7 +136,6 @@ header .navbar-collapse i.fa-regular:hover {
     color: white;
     border-color: #FF6E65;
 }
-
 
 /* SERVICE */
 .service .row {
@@ -253,7 +250,6 @@ header .navbar-collapse i.fa-regular:hover {
     margin: 20px 2px;
 }
 
-
 .class .class_icon {
     background-color: rgb(13 54 159 / 9%);
     color: #0d369f;
@@ -268,7 +264,6 @@ header .navbar-collapse i.fa-regular:hover {
     justify-content: center;
     align-items: center;
 }
-
 
 .class .class_content h5 {
     font-size: 20px;
@@ -339,7 +334,6 @@ header .navbar-collapse i.fa-regular:hover {
     font-size: 46px;
     font-weight: 600;
 }
-
 
 /* FEEDBACK */
 .feedback {
@@ -780,7 +774,87 @@ footer .footer_copy {
     opacity: 1;
 }
 
-/* body .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-} */
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    /*HEADER  */
+    .header_top {
+        display: none;
+    }
+
+    header .navbar-collapse {
+        display: none !important;
+    }
+
+    header .navbar-collapse.show {
+        display: block;
+    }
+
+    .carousel {
+        position: relative;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+    /* CAROUSEL */
+    /* SERVICE */
+    /* WELCOME */
+
+    .contact .contact_img img {
+        transform: translateX(50px);
+    }
+
+    footer .footer_main {
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    footer .icon4 {
+        padding: 0 15px;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /*HEADER  */
+    .header_top {
+        display: none;
+    }
+
+    header .navbar-collapse {
+        display: none !important;
+    }
+
+    header .navbar-collapse.show {
+        display: block;
+    }
+
+    /* WELCOME */
+    .welcome .item3 {
+        transform: translateX(50%);
+    }
+
+    .feedback .item3 {
+        transform: translateX(50%);
+    }
+
+    .contact .contact_img img {
+        transform: translateX(50%);
+    }
+
+    footer .icon4 {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 993px) {}
