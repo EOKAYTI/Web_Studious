@@ -813,12 +813,16 @@ footer .footer_copy {
     }
 
     footer .footer_main {
-        margin-top: 100px;
+        margin-top: 120px;
         padding: 20px;
     }
 
     footer .icon4 {
         padding: 0 15px;
+    }
+
+    footer .footer_both {
+        margin: 0 16px;
     }
 
 
@@ -854,6 +858,10 @@ footer .footer_copy {
 
     footer .icon4 {
         padding: 0 15px;
+    }
+
+    footer .footer_both {
+        margin: 0 16px;
     }
 }
 
