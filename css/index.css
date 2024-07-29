@@ -856,6 +856,10 @@ footer .footer_copy {
         transform: translateX(50%);
     }
 
+    footer .footer_main {
+        margin-top: 50px;
+    }
+
     footer .icon4 {
         padding: 0 15px;
     }
