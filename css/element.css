@@ -23,6 +23,21 @@
     margin-top: 16px;
 }
 
+h4 {
+    font-size: 24px;
+    color: black;
+    padding: 24px 0;
+    font-weight: bold;
+}
+
+h5 {
+    color: #0d369f;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 24px 0;
+}
+
+
 /* HEADER TOP */
 .header_top .navbar {
     background-color: #0D369F !important;
@@ -122,14 +137,42 @@ header .navbar-collapse i.fa-regular:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 48px;
 }
 
 .banner .banner_item {
-    top: 50px;
+    top: -20px;
 }
 
+.banner .banner_item h1 {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.banner .banner_item a,
+.banner .banner_item span {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.banner .banner_item a:hover {
+    color: white;
+}
+
+
 /* COMPONENTS */
+.components {
+    padding: 48px 0;
+}
+
 .components .components_title h3 {
     font-size: 40px;
     line-height: 50px;
@@ -182,6 +225,38 @@ header .navbar-collapse i.fa-regular:hover {
     background-color: #F8F9FF;
 }
 
+.components .bd-highlight {
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.components .list-group-item {
+    background-color: #F8F9FF;
+}
+
+.components .list-group-item.active {
+    background-color: #0D369F !important;
+    color: white;
+}
+
+
+.components table {
+    padding: 2rem;
+    border: 2px solid #dee2e6;
+    margin-top: 1rem;
+}
+
+.components th {
+    vertical-align: bottom;
+    border: 2px solid #dee2e6;
+    background-color: #F8F9FF;
+}
+
+.components td {
+    vertical-align: bottom;
+    border: 2px solid #dee2e6;
+}
+
 .breadcrumb li {
     padding: 12px 16px;
 }
@@ -193,9 +268,6 @@ header .navbar-collapse i.fa-regular:hover {
 .badge-primary {
     background-color: #0d369f;
 }
-
-
-
 
 
 
@@ -214,7 +286,7 @@ footer .footer_both {
     position: absolute;
     left: 0;
     right: 0;
-    top: -112px;
+    top: -150px;
     box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
 }
 

@@ -105,6 +105,9 @@ header .navbar-collapse i.fa-regular:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .carousel .carousel_item2 {
@@ -112,10 +115,13 @@ header .navbar-collapse i.fa-regular:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .carousel .carousel_content {
-    top: 250px;
+    bottom: -100px;
 }
 
 .carousel .carousel_item1 h1,
