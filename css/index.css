@@ -776,7 +776,6 @@ footer .footer_copy {
 
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
 
     /*HEADER  */
@@ -804,10 +803,7 @@ footer .footer_copy {
         z-index: 99;
     }
 
-    /* CAROUSEL */
-    /* SERVICE */
-    /* WELCOME */
-
+    /* CONTACT */
     .contact .contact_img img {
         transform: translateX(50px);
     }
@@ -824,8 +820,6 @@ footer .footer_copy {
     footer .footer_both {
         margin: 0 16px;
     }
-
-
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
