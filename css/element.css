@@ -57,7 +57,7 @@ h5 {
 header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999999999;
 }
 
 header .fa-solid {
@@ -72,6 +72,14 @@ header .navbar-brand {
     font-size: 26px;
     color: #0d369f;
     font-weight: 600;
+}
+
+header .navbar-brand span {
+    transition: all 0.5s;
+}
+
+header .navbar-brand span:hover {
+    color: #FF6E65;
 }
 
 header .navbar-nav .nav-item {
