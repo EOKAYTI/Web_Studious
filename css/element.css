@@ -54,87 +54,64 @@ h5 {
     color: #FF6E65 !important;
 }
 
-/* HEADER */
 header {
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-header .navbar {
-    padding: 16px;
+header .fa-solid {
+    position: absolute;
+    color: #0d369f;
+    right: 5px;
+    top: 15px;
+    padding: 0px 20px 0px 0px;
 }
 
-header .navbar a.navbar-brand {
-    color: #0D369F;
+header .navbar-brand {
     font-size: 26px;
+    color: #0d369f;
     font-weight: 600;
-    transition: all 0.5s;
 }
 
-header .navbar a.navbar-brand:hover {
-    color: #FF6E65 !important;
+header .navbar-nav .nav-item {
+    padding: 0 6px;
+    transition: all 0.5s ease;
+    position: relative;
 }
 
-header .navbar a.nav-link,
-header .dropdown-menu a.dropdown-item {
-    color: #060606;
+header .navbar-nav .nav-link {
     padding: 6px 0;
     font-size: 16px;
+    color: black;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 0 12px !important;
     transition: all 0.5s;
 }
 
-header .dropdown-menu a.dropdown-item {
-    padding: 5px 12px !important;
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .dropdown-item:hover {
+    color: #ff6e65;
 }
 
-header .navbar a.nav-link:hover {
-    color: #FF6E65 !important;
+header span {
+    margin-left: 5px;
 }
 
-header .dropdown-menu a.dropdown-item:hover {
-    color: #FF6E65 !important;
-}
-
-header .navbar-collapse {
-    display: flex !important;
-    justify-content: flex-end;
-}
-
-header .navbar-collapse form input {
+header .nhap {
     font-size: 15px;
+    color: black;
     border: none;
     background: transparent;
-    padding: 10px 35px 10px 20px;
+    padding: 10px 20px;
     width: 100%;
     border-radius: 30px;
     border: 2px solid #eee;
 }
 
-header .navbar-collapse form input:focus {
+header .nhap:focus {
     outline: none;
-    box-shadow: none;
-    border: 2px solid #eee;
-}
-
-header .navbar-collapse form button {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    color: #0D369F;
-    transition: all 0.5s;
-}
-
-header .navbar-collapse form button:hover {
-    color: #FF6E65 !important;
-}
-
-header .navbar-collapse i.fa-regular:hover {
-    color: #FF6E65 !important;
-    cursor: pointer;
 }
 
 /* BANNER */
@@ -511,6 +488,10 @@ footer .footer_copy {
         display: none;
     }
 
+    header .navbar {
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
     header .navbar-collapse {
         display: none !important;
     }
@@ -544,6 +525,10 @@ footer .footer_copy {
     /*HEADER  */
     .header_top {
         display: none;
+    }
+
+    header .navbar {
+        background-color: rgba(0, 0, 0, 0) !important;
     }
 
     header .navbar-collapse {
